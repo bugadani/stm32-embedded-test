@@ -1,0 +1,14 @@
+[alias]
+stm32c011f6 = "test --features embassy-stm32/stm32c011f6 --target thumbv6m-none-eabi"
+stm32f051r8 = "test --features embassy-stm32/stm32f051r8 --target thumbv6m-none-eabi"
+stm32f429zi = "test --features embassy-stm32/stm32f429zi --target thumbv7m-none-eabi"
+stm32g031k8 = "test --features embassy-stm32/stm32g031k8 --target thumbv6m-none-eabi"
+stm32g431kb = "test --features embassy-stm32/stm32g431kb --target thumbv7m-none-eabi"
+stm32l432kc = "test --features embassy-stm32/stm32l432kc --target thumbv7m-none-eabi"
+stm32u545re = "test --features embassy-stm32/stm32u545re --target thumbv7m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+runner = "probe-rs run --chip stm32c011f6ux"
+
+[unstable]
+build-std = ["core"]
